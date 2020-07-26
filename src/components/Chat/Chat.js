@@ -5,6 +5,9 @@ import './Chat.css';
 
 const Chat = ({ location }) => {
 
+    const [name, setName] = useState('');
+    const [room, setRoom] = useState('');
+
     useEffect(() => {
         const data = queryString.parse(location.search)
 
