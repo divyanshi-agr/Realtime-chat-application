@@ -5,6 +5,10 @@ const addUser = ({ id, name, room }) => {
     room = room.trim().toLowerCase();
 
     const existingUser = users.find((user) => user.room === room && user.name === name);
+
+    if(existingUser) {
+        return {error: 'Username is taken'}
+    }
 }
 
 const removeUser = () => {
