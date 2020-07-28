@@ -17,9 +17,9 @@ io.on('connection', (socket) => {
 
     // })
 
-    socket.on('disconnect', () => {
-        console.log('User had left');
-    })
+    // socket.on('disconnect', () => {
+    //     console.log('User had left');
+    // })
 })
 
 app.use(router);
