@@ -12,8 +12,8 @@ const server = http.createServer(app);
 io.on('connection', (socket) => {
     console.log('We have a new connection');
 
-    socket.on('join', ({name,room}, callback) => {
-        console.log(name, room);
+    // socket.on('join', ({name,room}, callback) => {
+    //     console.log(name, room);
 
     })
 
